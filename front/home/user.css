@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background: url("./../rm222-mind-16.jpg");
+    background-size: cover;
+}
+
+
+.displayUser{
+    min-height: 500px;
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.93);
+    border-radius: 20px;
+}
+
+.buyticket{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    padding: 10px 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(0, 138, 226, 0.17);
+    border-radius: 20px;
+}
+
+.displayUser button{
+    padding: 10px 20px;
+    color: white;
+    background: #1560BD;
+    width: 45%;
+    border-radius: 25px;
+    border: none;
+}
+.category p{
+    text-align: center;
+}
