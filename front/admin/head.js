@@ -10,6 +10,7 @@ export let ele = `
         <button onclick="window.location.href='/admin/pages/adminemployee.html'">Сотрудники</button>
         <button onclick="window.location.href='/admin/pages/adminticket.html'">Билеты</button>
         <button onclick="window.location.href='/admin/add/adminadd.html'">Добавить</button>
+        <button onclick="window.location.href='/admin/pages/stats.html'">Статистика</button>
     </div>
     </div>
     <div style="width: 33%;display: flex;align-items: center;justify-content: center">
