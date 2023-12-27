@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+<div>
+
+</div>
+<div style="display: flex;justify-content: center;width: 100%">
+    <div class="displayUser">
+        <div>
+            <h1>Мои билеты</h1>
+            <div class="tickets">
+            </div>
+        </div>
+        <div>
+            <h1>Личный кабинет</h1>
+            <p class="category"></p>
+            <div style="width: 100%; display: flex;justify-content: center">
+                <button onclick="window.location.href = '/index.html'">Выйти</button>
+            </div>
+        </div>
+        <div>
+            <h1 style="text-align: center">Купить билет</h1>
+            <div class="buyticket">
+                <div>
+                    <p>Время сеанса</p>
+                    <select class="time">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Количество персон</p>
+                    <select class="people">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div style="display: flex;justify-content: center;width: 100%">
+                <div>
+                <p>Дата визита</p>
+                <input type="date" class="date">
+                </div>
+            </div>
+            <div style="width: 100%; display: flex;justify-content: center; margin-top: 20px">
+            <button onclick="buyTicket()">Купить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="user.js"></script>
+</body>
+</html>

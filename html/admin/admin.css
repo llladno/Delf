@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+}
+.adminbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    padding: 10px 20px;
+    color: white;
+    background: #1560BD;
+    border-radius: 25px;
+    border: none;
+}
+
+button:hover{
+    padding: 10px 20px;
+    color: white;
+    background: #538ac7;
+    border-radius: 25px;
+    border: none;
+}
+
+.table{
+    display:flex ;
+    width: 100%;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    /*убираем пустые промежутки между ячейками*/
+    border: 1px solid grey;
+    /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+}
+th, td {
+    border: 1px solid grey;
+    padding: 10px 15px;
+}
+ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.displayadd{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.addbuttons{
+    display: grid;
+    width: 300px;
+    gap: 20px;
+    grid-template-columns: 45% 45%;
+}
+
+.deleteb{
+    background: #dc0b0b;
+}
+
+.deleteb:hover {
+    background: #d24242;
+}

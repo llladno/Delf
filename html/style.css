@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background: url("./rm222-mind-16.jpg");
+    background-size: cover;
+}
+body,html{
+    margin: 0;
+    padding: 0
+}
+
+.auth{
+    display: none;
+    width: 100%;
+    justify-content: center;
+
+}
+.stylesauth{
+    width: 25%;
+    margin-top: 100px;
+}
+.stylesauth h1{
+    text-align: center;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons>button{
+    padding: 10px 20px;
+    color: white;
+    background: #1560BD;
+    width: 45%;
+    border-radius: 25px;
+    border: none;
+}
+
+.buttons a{
+    padding: 10px 20px;
+    color: white;
+    background: #0047AB;
+    width: 45%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.buttons2>button{
+    padding: 10px 20px;
+    color: white;
+    background: #1560BD;
+    width: 45%;
+    border-radius: 25px;
+    border: none;
+}
+.buttons2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /*justify-content: center;*/
+}
+
+.auth input{
+    max-width: 100%;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #1560bd;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
