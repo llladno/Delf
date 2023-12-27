@@ -17,11 +17,11 @@ app.use(cors())
 app.use(bodyParser.json())
 
 var db_config = {
-    host: '192.168.0.1',
-    user: 'a2',
+    host: 'localhost',
+    user: 'root',
     // port:3000,
     database: 'delf',
-    password: 'Qwerty123!'
+    password: 'qwerty12'
 };
 
 
@@ -254,28 +254,26 @@ email = '${req.body[4]}',phone = '${req.body[5]}', passwd = '${req.body[6]}' WHE
     app.post('/user/home',(req,res)=>{
         console.log(req.body)
         let id
-        connection.query(`select * from client where email = '${req.body.mail}'`, (err, resu) => {
-console.log(err)
+        connection.query(`select * from client where email = ${req.body.mail}`, (err, resu) => {
             console.log(resu)
             res.send({resu})
         })
     })
 
     app.post('/user/home/cheque',(req,res)=>{
-	console.log('body')
         console.log(req.body)
         let id
-        connection.query(`select * from client where email = '${req.body.mail}'`, (err, resu) => {
+        connection.query(`select * from client where email = ${req.body.mail}`, (err, resu) => {
             console.log(resu)
             if(resu[0].idclient != undefined){
                 id = resu[0].idclient
                 console.log(id)
                 console.log('tit')
                 connection.query(`SELECT *
-	FROM cheque
-	inner JOIN ticket
-	ON cheque.idticket = ticket.idticket-1 where idclient = ${id}`, (err, result) => {
-		            console.log(result)
+FROM cheque
+inner JOIN ticket
+ON cheque.idticket = ticket.idticket where idclient = '${id}'`, (err, result) => {
+                    console.log(result)
                     res.send({result})
                 })
             }
